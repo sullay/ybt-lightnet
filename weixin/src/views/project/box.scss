@@ -1,0 +1,72 @@
+.s-box{
+  position: relative;
+  margin: vw(16) auto 0;
+  width: vw(686);
+  background:rgba(255,255,255,1);
+  box-shadow:0 vw(15) vw(30) 0 rgba(57,68,67,0.08);
+  border-radius: vw(20);
+  font-size: vw(24);
+  font-weight:400;
+  color:rgba(86,96,94,1);
+  line-height: vw(56);
+  opacity:0.9;
+  text-align: left;
+  h1{
+    font-size:vw(32);
+    font-weight:600;
+    color:rgba(45,49,48,1);
+    line-height: 1;
+    margin-bottom: vw(38);
+  }
+  
+  .img-box{
+    display: flex;
+    label{
+      flex-shrink: 0;
+    }
+    .img-list{
+      height: vw(190);
+      overflow: auto;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: vw(168);
+      grid-auto-columns: vw(140);
+      column-gap: vw(36);
+      img{
+        width: 100%;
+        height: 100%;
+      }
+
+      /* -- 滚动条 start -- */
+      &::-webkit-scrollbar {
+        height: vw(4);
+      }
+      /*!*定义滑块 内阴影+圆角*!*/
+      &::-webkit-scrollbar-thumb {
+        background:rgba(0,160,235,1);
+        border-radius: vw(2);
+      }
+      /*滚动条里面轨道*/
+      &::-webkit-scrollbar-track {
+        background:rgba(212,215,214,1);
+        border-radius:vw(1);
+      }
+    }
+  }
+}
+.s-mark-1{
+  left: vw(37);
+  top: vw(16);
+}
+.s-mark-2{
+  right: vw(37);
+  top: vw(16);
+}
+.s-mark-3{
+  left: vw(37);
+  bottom: vw(16);
+}
+.s-mark-4{
+  right: vw(37);
+  bottom: vw(16);
+}
